@@ -1,0 +1,103 @@
+.authorization {
+
+    &__content {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 19px 9px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+        position: relative;
+        max-width: 580px;
+        min-height: 360px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .5s ease;
+        @media (max-width: 480px) {
+            max-width: 300px;
+            min-height: 250px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    &__entry-button {
+        background-image: url(../icon/entrry.svg);
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        @media (max-width: 768px) {
+            width: 120px;
+            height: 120px;
+            background-size: 120px;
+        }
+        @media (max-width: 480px) {
+            width: 80px;
+            height: 80px;
+            background-size: 80px;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 74.5%;
+        color: #727272;
+        text-transform: uppercase;
+        margin-top: 23px;
+        text-align: center;
+        @media (max-width: 480px) {
+            font-size: 10px;
+        }
+    }
+
+    &__regestration-button {
+        background-image: url(../icon/reg.svg);
+        width: 150px;
+        height: 150px;
+        border-radius: 54px;
+        @media (max-width: 768px) {
+            width: 120px;
+            height: 120px;
+            background-size: 120px;
+        }
+        @media (max-width: 480px) {
+            width: 80px;
+            height: 80px;
+            background-size: 80px;
+        }
+    }
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(252, 247, 244, 0.66);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+.popup.open .authorization__content{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}

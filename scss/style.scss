@@ -1,0 +1,84 @@
+@import "null.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular);
+
+
+body {
+    font-family: "Raleway";
+}
+body._lock {
+    overflow: hidden;
+}
+body.lock {
+    overflow: hidden;
+}
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        padding: 0 25px;
+    }
+}
+.subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #fe9519;
+    @media (max-width: 480px) {
+        font-size: 10px;
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 125%;
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+    @media (max-width: 480px) {
+        font-size: 25px;
+    }
+}
+.description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #6f6f6f;
+    @media (max-width: 480px) {
+        font-size: 15px;
+    }
+}
+
+
+@import "null.scss"; 
+@import "header.scss";
+@import "start.scss";
+@import "connection.scss";
+@import "developments.scss";
+@import "result.scss";
+@import "will-not-be.scss";
+@import "reviews.scss";
+@import "prices.scss";
+@import "slogan.scss";
+@import "footer.scss";
+@import "authorization.scss";
+@import "entry.scss";
+@import "registration.scss";
+@import "recovery.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
